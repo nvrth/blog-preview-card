@@ -49,6 +49,13 @@ body {
     font-family: var(--figtree-800);
     line-height: 150%;
     letter-spacing: 0px;
+    color: var(--gray-950);
+    transition: 0.1s all step-end;
+}
+
+.title:hover {
+    color: var(--yellow);
+    cursor: pointer;
 }
 
 .description {
