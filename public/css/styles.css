@@ -54,7 +54,7 @@ main {
 }
 
 .card {
-    width: clamp(327px, 2vw, 384px);
+    width: clamp(327px, 40%, 384px);
     /* height: 501px; */
     background: hsl(0, 0%, 100%);
     padding: 24px;
@@ -79,18 +79,18 @@ main {
     gap: 12px;
 }
 
-.social img {
+.author img {
     width: 32px;
     height: 32px;
 }
 
-.social {
+.author {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.social p {
+.author p {
     font-family: var(--figtree-800);
 }
 
@@ -99,5 +99,4 @@ main {
     background:hsl(47, 88%, 63%);
     border-radius: 4px;
     font-family: var(--figtree-800);
-
 }
