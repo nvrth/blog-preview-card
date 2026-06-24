@@ -1,3 +1,25 @@
+/* figtree-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Figtree-500';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/figtree-v9-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Figtree-800';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fontsfigtree-v9-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+    --figtree-500: 'Figtree-500';
+    --figtree-800: 'Figtree-800';
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +28,11 @@
 
 body, html {
     height: 100%;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: var(--figtree-800);
 }
 
 main {
@@ -20,8 +47,18 @@ main {
     height: 501px;
     background: hsl(0, 0%, 100%);
     padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.illustration-article {
+.card img {
     width: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.card-content img {
+    width: 32px;
+    height: 32px;
 }
