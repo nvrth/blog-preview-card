@@ -44,11 +44,14 @@ body {
     color: hsl(0, 0%, 7%);
 }
 
+h1, p {
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
 .title {
     font-size: 24px;
     font-family: var(--figtree-800);
-    line-height: 150%;
-    letter-spacing: 0px;
     color: var(--gray-950);
     transition: 0.1s all step-end;
 }
