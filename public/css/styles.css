@@ -77,7 +77,7 @@ main {
 }
 
 .card {
-    width: clamp(20rem, 2vw, 24rem);
+    width: clamp(20rem, 4vw, 24rem);
     background: var(--white);
     padding: 1.5em;
     border-radius: 1.25em;
@@ -120,7 +120,7 @@ main {
 .tag {
     padding: 0.25em 0.75em;
     background: var(--yellow);
-    border-radius: 4px;
+    border-radius: 0.25em;
     font-family: var(--figtree-800);
     font-size: clamp(0.7rem, 2vw, 0.875rem);
 }
