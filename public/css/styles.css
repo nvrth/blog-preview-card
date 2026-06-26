@@ -22,9 +22,7 @@
 
     /* colors */
     --yellow: hsl(47, 88%, 63%);
-
     --white: hsl(0, 0%, 100%);
-    
     --gray-500: hsl(0, 0%, 42%);
     --gray-950: hsl(0, 0%, 7%);
 }
@@ -53,9 +51,15 @@ h1, p {
     font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-family: var(--figtree-800);
     color: var(--gray-950);
-    transition: 0.1s all ease-in-out;
+
+    /* BAD: Forces browser to check layout, sizes, fonts, etc. */
+    /* transition: 0.1s all ease-in-out; */
+
+    /* GOOD: Only transitions the specific property changing */
+    transition: color 0.2s ease-in-out;
 }
 
+.title:focus,
 .title:hover {
     color: var(--yellow);
     cursor: pointer;
