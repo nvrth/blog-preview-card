@@ -41,7 +41,7 @@ body, html {
 
 body {
     font-family: var(--figtree-500);
-    color: hsl(0, 0%, 7%);
+    font-family: var(0.8rem, 2vw, 1rem);
 }
 
 h1, p {
@@ -50,7 +50,7 @@ h1, p {
 }
 
 .title {
-    font-size: 24px;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-family: var(--figtree-800);
     color: var(--gray-950);
     transition: 0.1s all step-end;
@@ -65,6 +65,10 @@ h1, p {
     color: var(--gray-500);
 }
 
+.date {
+    font-size: clamp(0.7rem, 2vw, 0.875rem);
+}
+
 main {
     min-height: 100vh;
     display: grid;
@@ -74,7 +78,6 @@ main {
 
 .card {
     width: clamp(327px, 40%, 384px);
-    /* height: 501px; */
     background: var(--white);
     padding: 24px;
     border-radius: 20px;
@@ -111,6 +114,7 @@ main {
 
 .author p {
     font-family: var(--figtree-800);
+    font-size: clamp(0.7rem, 2vw, 0.875rem);
 }
 
 .tag {
@@ -118,4 +122,5 @@ main {
     background: var(--yellow);
     border-radius: 4px;
     font-family: var(--figtree-800);
+    font-size: clamp(0.7rem, 2vw, 0.875rem);
 }
