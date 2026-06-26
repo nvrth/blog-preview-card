@@ -50,7 +50,7 @@ h1, p {
 }
 
 .title {
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 3vw, 1.4rem);
     font-family: var(--figtree-800);
     color: var(--gray-950);
     transition: 0.1s all ease-in-out;
@@ -78,7 +78,7 @@ main {
 }
 
 .card {
-    width: clamp(20rem, 8vw, 24rem);
+    width: clamp(20.4375em, 90%, 24em);
     background: var(--white);
     padding: 1.5em;
     border-radius: 1.25em;
@@ -86,7 +86,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5em;
-    box-shadow: 10px 10px 0px 0px var(--gray-950);
+    box-shadow: 10px 10px 0px 0px var(--gray-950); /* <offset-x>, <offset-y>, <blur-radius>, <spread-radius> <color> */
     border: 1px solid var(--gray-950);
 }
 
@@ -115,7 +115,7 @@ main {
 
 .author p {
     font-family: var(--figtree-800);
-    font-size: clamp(0.7rem, 2vw, 0.875rem);
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
 .tag {
@@ -123,5 +123,5 @@ main {
     background: var(--yellow);
     border-radius: 0.25em;
     font-family: var(--figtree-800);
-    font-size: clamp(0.7rem, 2vw, 0.875rem);
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
