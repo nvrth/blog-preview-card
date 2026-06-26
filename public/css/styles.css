@@ -53,7 +53,7 @@ h1, p {
     font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-family: var(--figtree-800);
     color: var(--gray-950);
-    transition: 0.1s all step-end;
+    transition: 0.1s all ease-in-out;
 }
 
 .title:hover {
@@ -70,35 +70,35 @@ h1, p {
 }
 
 main {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: grid;
     place-items: center;
     background: var(--yellow);
 }
 
 .card {
-    width: clamp(327px, 40%, 384px);
+    width: clamp(20rem, 2vw, 24rem);
     background: var(--white);
-    padding: 24px;
-    border-radius: 20px;
+    padding: 1.5em;
+    border-radius: 1.25em;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 1.5em;
     box-shadow: 10px 10px 0px 0px var(--gray-950);
     border: 1px solid var(--gray-950);
 }
 
 .illustration-article {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625em;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .author img {
@@ -109,7 +109,7 @@ main {
 .author {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75em;
 }
 
 .author p {
@@ -118,7 +118,7 @@ main {
 }
 
 .tag {
-    padding: 4px 12px;
+    padding: 0.25em 0.75em;
     background: var(--yellow);
     border-radius: 4px;
     font-family: var(--figtree-800);
