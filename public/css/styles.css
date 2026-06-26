@@ -74,10 +74,11 @@ main {
     display: grid;
     place-items: center;
     background: var(--yellow);
+
 }
 
 .card {
-    width: clamp(20rem, 4vw, 24rem);
+    width: clamp(20rem, 8vw, 24rem);
     background: var(--white);
     padding: 1.5em;
     border-radius: 1.25em;
